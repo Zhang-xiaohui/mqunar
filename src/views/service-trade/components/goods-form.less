@@ -1,0 +1,93 @@
+@import '../../../styles/common.less';
+.form-section{
+    border-top: 1px solid @border-color;
+    .form-title{
+    	font-size: 14px;
+    	padding:8px 15px;
+    	background-color: #fafbfc;
+    }
+    .form-content{
+    	padding:10px 35px;
+    	width:80%;
+    }
+    .add-spec-box{
+    	.spec-item{
+    		padding:15px;
+    		margin-bottom: 10px;
+    		border:1px dashed #dddee1;
+    	}
+    	.btn-add-sub{
+    		margin:0 8px 0 15px;
+    		float:left;
+    		display:block;
+    		line-height:31px;
+    	}
+    	.spec-value{
+    		vertical-align: middle;
+    		overflow: hidden;
+    		position:relative;
+    		li{
+    			background-color:#fafbfc;
+    			border:1px solid #dddee1;
+    			padding:6px 10px;
+    			border-radius: 5px;
+    			float: left;
+    			margin-right: 5px;
+    			margin-bottom: 5px;
+    			.ivu-icon{
+    				margin-left:5px;
+    				cursor: pointer;
+    			}
+    		}
+    	}
+    }
+    .show-spec-table{
+    	margin-top:15px;
+    	table{
+    		table-layout: fixed;
+    		border-collapse:collapse;
+    		width:100%;
+    		text-align: center;
+    	}
+    	th,td{
+    		border:1px solid #dddee1;
+    		height: 30px;
+    	}
+    	td{
+    		background-color:#fcfcfc;
+    	}
+    	.table-input{
+    		padding:8px 0;
+    		width:70%;
+    	}
+    	.table-addPic{
+    		border:2px solid #d6e2ed;
+    		color:#d6e2ed;
+    		width:24px;
+    		height:24px;
+    		line-height: 20px;
+    		cursor:pointer;
+    	}
+    }
+    .batch-spec{
+    	margin-top:20px;
+    	.batch-title{
+    		float: left;
+    		line-height:31px;
+    		b{
+    			color:red;
+    		}
+    	}
+    	.ivu-form-item{
+    		float: left;
+    		margin-right:10px;
+    		overflow:hidden;
+    		width:29.5%;
+    	}    	
+    }
+    .form-media{
+    	.red{
+    		color:red;
+    	}
+    }
+}

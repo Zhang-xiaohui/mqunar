@@ -1,0 +1,93 @@
+@import '../../../styles/common.less';
+
+.border-rg{
+	border-right: 1px solid #e9eaec;
+}
+.primary-table .ivu-table th:nth-child(2){
+	border-right:none;
+}
+.operate-all{
+	height: 50px;
+	overflow:hidden;
+	border-top: 1px solid #dddee1;
+	line-height:50px;
+	.operate-left{
+		padding-left: 15px;
+		float: left;
+		.selected-tips{
+			margin-right: 10px;
+		}
+		.selected-num{
+			color: @main-color;
+		}
+	}
+	.operate-right{
+		margin-right:30px;
+		float:right;
+	}
+}
+.form-cat{
+	margin-bottom:14px;
+	p{
+		color:#a3adc8;
+	}
+}
+
+.table-cat{
+	table-layout: fixed;
+    border-collapse:collapse;
+    width:100%;
+    border-bottom:1px solid @border-color;
+    tbody{
+    	// tr{
+    	// 	&:nth-child(2n+1){
+	    // 		background-color:#fbfcff;
+	    // 	}
+    	// }
+    }
+    tr{
+    	&:hover{
+    		background-color: #f4f8fe;
+    	}
+    }
+    td,th{
+
+    	text-align: left;
+    	height:45px;
+    	padding: 0 15px;
+    }
+    th{
+    	height:40px;
+    	border-right: 1px solid @border-color;
+        border-top:1px solid @border-color;
+    }
+    td{
+        border-top:1px solid @border-color;
+        border-bottom:1px solid @border-color;
+    }
+    .t-checkbox{
+    	width:50px;
+    	text-align: center;
+    	border-right: 1px solid @border-color;
+    }
+    .t-checkbox-sub{
+        border-right: 1px solid @border-color;
+    }
+    tr.t-data-sub{
+        td{
+            border-top:none;
+            border-bottom:none;
+        }
+        .t-name-sub{
+            padding-left:30px;
+        }
+    }
+    .table-icon{
+    	margin-left:5px;
+    	color:#a3adc8;
+    }
+    .unfold-span{
+    	cursor: pointer;
+    }
+}
+

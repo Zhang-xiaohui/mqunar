@@ -1,0 +1,89 @@
+@import '../../../styles/common.less';
+
+.wrap-main-suggest{
+    background-color:#fff;
+    padding: 30px;
+    border-top:1px solid @border-color;
+    border-bottom:1px solid @border-color;
+    .radio-group{
+        dd{
+            float:left;
+            margin-right: 20px; 
+            position: relative;
+        }
+        .radio-tab{
+            border: 1px solid @sub-color;
+            color: @sub-color;
+            padding: 0px 20px;
+            border-radius: 5px;
+            height: 30px;
+            line-height: 30px;
+            position:relative;
+            z-index:1;
+            cursor: pointer;
+        }
+        input[type='radio']{
+            width: 100%;
+            height: 30px;
+            position:absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            &:checked + .radio-tab{
+                background-color: @sub-color;
+                color:#fff;
+            }
+        }
+
+    }
+    .upload-plugin,.upload-box{
+        width:120px;
+        height: 120px;
+        background-color:#fcfcfc;
+        border-radius: 5px; 
+    }
+    .upload-plugin{
+        .ivu-upload-drag{
+            border: 1px solid #dddee1;
+        }
+        .ivu-upload-drag:hover{
+            border: 1px solid @sub-color;
+        }
+    }
+    .upload-box .ivu-icon{
+        margin-top: 20px;
+    }
+    .upload-show{
+        width:120px;
+        height: 120px;
+        border-radius: 5px;
+        position: relative; 
+        background-color:#fcfcfc;
+        .ivu-progress{
+            display:inline-block;
+            line-height:120px;
+        }
+    }
+    .upload-tips{
+        color: @tips-color;
+    }
+    .upload-cover{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width:100%;
+        height:100%;
+        position: relative;
+        i{
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            color: @sub-color;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+    }
+    
+}
